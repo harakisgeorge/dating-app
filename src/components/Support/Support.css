@@ -1,0 +1,85 @@
+.support-container_navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-leftside a {
+  font-size: 3rem;
+  color: rgb(255, 0, 76);
+}
+
+.navbar-leftside a span {
+  color: black;
+  letter-spacing: -0.25rem;
+}
+
+.navbar-rightsize a {
+  color: rgb(255, 0, 76);
+  font-size: 1.1rem;
+}
+
+.main-section {
+  margin-top: 240px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section h1 {
+  margin-top: -80px;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+  font-family: fantasy;
+}
+
+.search-box {
+  height: 30px;
+  width: 600px;
+  color: #616161;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 2px solid #dedede;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0;
+}
+.search-box:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(255, 36, 102);
+}
+
+.main-section div {
+  color: grey;
+}
+
+.button-group {
+  margin-top: 130px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group ul li:nth-of-type(1) {
+  padding: 1.2rem 5rem;
+  background: #fd267d;
+}
+.button-group ul li:nth-of-type(2) {
+  padding: 1.2rem 5rem;
+  background: #fe5466;
+}
+.button-group ul li:nth-of-type(3) {
+  padding: 1.2rem 5rem;
+  background: #ff7b58;
+}
+.button-group ul li:nth-of-type(4) {
+  padding: 1.2rem 5rem;
+  background: #f65068;
+}
+
+.button-group ul li a:nth-of-type(1) {
+  color: white;
+}

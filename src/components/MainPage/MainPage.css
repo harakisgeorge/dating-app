@@ -1,0 +1,56 @@
+.mainpage-container {
+  background: rgb(253, 41, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 123, 1) 0%,
+    rgba(255, 88, 100, 1) 35%,
+    rgba(255, 101, 91, 1) 100%
+  );
+  height: 100vh;
+}
+
+.mainpage-center {
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: white;
+}
+
+.mainpage-center_title {
+  font-family: Quicksand;
+  font-size: 5rem;
+}
+
+.mainpage-center_title .superscript {
+  font-size: 2.7rem;
+  border: 5px solid white;
+  padding: 0.34rem 1rem;
+  border-radius: 100%;
+}
+
+.mainpage-center_button {
+  margin-top: 30px;
+  background: rgb(253, 41, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 123, 1) 0%,
+    rgba(255, 88, 100, 1) 35%,
+    rgba(255, 101, 91, 1) 100%
+  );
+  color: white;
+  border: white 1px solid;
+  border-radius: 30px;
+  width: 330px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mainpage-center_button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 122, 0.993) 0%,
+    rgba(255, 88, 100, 0.8) 35%,
+    rgba(238, 55, 42, 0.8) 100%
+  );
+}

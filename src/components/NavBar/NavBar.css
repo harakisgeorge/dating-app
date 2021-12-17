@@ -1,0 +1,36 @@
+.navBar-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navBar-container ul li a {
+  color: white;
+}
+
+.navBar-leftside,
+.navBar-rightside {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navBar-button {
+  margin-top: 30px;
+  background: rgb(253, 41, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 123, 1) 0%,
+    rgba(255, 88, 100, 1) 35%,
+    rgba(255, 101, 91, 1) 100%
+  );
+  color: white;
+  border: white 1px solid;
+  border-radius: 30px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
