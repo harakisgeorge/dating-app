@@ -1,8 +1,7 @@
 import React from 'react'
 import "./LoginForm.css"
-const LoginForm = ({isShowLogin}) => {
+const LoginForm = () => {
    return (
-      <div className={`${!isShowLogin ? "active" : ""} show`}>
          <div className="login-form">
             <div className="form-box solid">
                <form>
@@ -24,7 +23,6 @@ const LoginForm = ({isShowLogin}) => {
                </form>
             </div>
          </div>
-      </div>
    )
 }
 

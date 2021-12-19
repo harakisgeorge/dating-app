@@ -58,28 +58,45 @@
 
 .button-group {
   margin-top: 130px;
-  display: grid;
+  display: flex;
+  flex: 1 0 25%;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.button-group ul li:nth-of-type(1) {
-  padding: 1.2rem 5rem;
+.button {
+  display: block;
+  width: 350px;
+  height: 50px;
+  color: white;
+  margin: 0 auto;
+  transition: width height 1s;
+}
+
+.button:hover {
+  width: 380px;
+  height: 60px;
+}
+
+#button1 {
   background: #fd267d;
 }
-.button-group ul li:nth-of-type(2) {
-  padding: 1.2rem 5rem;
+#button2 {
   background: #fe5466;
 }
-.button-group ul li:nth-of-type(3) {
-  padding: 1.2rem 5rem;
+#button3 {
   background: #ff7b58;
 }
-.button-group ul li:nth-of-type(4) {
-  padding: 1.2rem 5rem;
+#button4 {
   background: #f65068;
 }
 
-.button-group ul li a:nth-of-type(1) {
-  color: white;
+.button-group-bottom {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }

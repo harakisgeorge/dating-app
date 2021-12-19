@@ -15,7 +15,6 @@ const MainPage = () => {
       <div>
          <div className="mainpage-container">
             <NavBar handleLoginClick={handleLoginClick}/>
-            <LoginForm isShowLogin={isShowLogin}/>
             <div className="mainpage-center">
                <h1 className="mainpage-center_title">Swipe Right <sup className="superscript">R</sup> </h1>
                <button className="mainpage-center_button">CREATE ACCOUNT</button>

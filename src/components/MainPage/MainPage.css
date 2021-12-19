@@ -10,6 +10,8 @@
 }
 
 .mainpage-center {
+  margin-top: 200px;
+
   display: grid;
   place-items: center;
   position: relative;

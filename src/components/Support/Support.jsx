@@ -2,6 +2,7 @@ import React from 'react'
 import {GoFlame } from 'react-icons/go';
 import {BiSearch} from "react-icons/bi"
 import "./Support.css"
+
 const Support = () => {
    return (
       <div className='support-container'>
@@ -22,15 +23,19 @@ const Support = () => {
             </div>
          </div>
 
-         <div className="button-group">
-            <ul>
-               <li><a href="#">A Guide To Tinder</a></li>
-               <li><a href="#">Troubleshooting</a></li>
-               <li><a href="#">Security  Privacy</a></li>
-               <li><a href="#">Safety  Reporting</a></li>
+            <ul className="button-group">
+               <li><a id="button1" className="button" href="#">A Guide To Tinder</a></li>
+               <li><a id="button2" className="button" href="#">Troubleshooting</a></li>
+               <li><a id="button3" className="button" href="#">Security & Privacy</a></li>
+               <li><a id="button4" className="button" href="#">Safety & Reporting</a></li>
 
             </ul>
-         </div>
+
+            <ul className="button-group-bottom">
+               <li><a id="button-bottom1" className="button-bottom" href="#">Privacy</a></li>
+               <li><a id="button-bottom2" className="button-bottom" href="#">English (US) </a></li>
+            </ul>
+
       </div>
    )
 }

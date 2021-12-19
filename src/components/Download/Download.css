@@ -1,0 +1,25 @@
+.download-container {
+  background: rgb(253, 41, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 123, 1) 0%,
+    rgba(255, 88, 100, 1) 35%,
+    rgba(255, 101, 91, 1) 100%
+  );
+  min-height: 720px;
+}
+
+.download-uppercontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.download-image {
+  width: auto;
+  height: 600px;
+}
+
+.download-container-lower {
+  min-height: 720px;
+}

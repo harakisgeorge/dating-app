@@ -1,7 +1,6 @@
 import React from 'react'
 import "./LowerPage.css"
 import { FaFacebook,FaTwitter,FaInstagram,FaLinkedinIn } from 'react-icons/fa';
-
 const LowerPage = () => {
    return (
       <div className="lowerpage-container">
@@ -82,10 +81,10 @@ const LowerPage = () => {
                </div>
             </div>
 
-            <div className="extra-_info">
+            <div className="extra-info">
                <div className="extra_info-part1">
-                  <p>ada</p>
-                  <img src="" />
+                  <h3>GET THE APP!</h3>
+                  <img src="../assets/apple_store.png" />
                   <img src="" />
                </div>
                <div className="extra_info-part2">
