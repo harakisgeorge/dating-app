@@ -1,7 +1,7 @@
 .navBar-container {
   display: flex;
   flex-direction: row;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: white;
 }
 
@@ -11,12 +11,16 @@
 
 .navBar-leftside,
 .navBar-rightside {
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
 }
 
+.navBar-rightside {
+  width: 80%;
+}
 .navBar-button {
   margin-top: 30px;
   background: rgb(253, 41, 123);

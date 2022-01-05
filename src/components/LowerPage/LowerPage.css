@@ -10,8 +10,7 @@
   padding: 2rem 1rem;
 }
 .slide {
-  border: 1px grey solid;
-  box-shadow: 0 2px 6px 0 rgba(101, 110, 123, 0.14);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 250px;
   width: 420px;
   margin: 0 auto;

@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Download from './components/Download/Download';
 import Login from "./components/LoginForm/LoginForm";
 import Register from './components/Register/Register';
+import Swiping from './components/Swiping/Swiping';
+
 function App() {
   return (
 
@@ -17,6 +19,7 @@ function App() {
               <Route path='/download' element={<Download/>} />
               <Route path='/register' element={<Register/>} />
               <Route path='/login' element={<Login/>} />
+              <Route path='/swiping' element={<Swiping/>} />
 
           </Routes>
          </div>
