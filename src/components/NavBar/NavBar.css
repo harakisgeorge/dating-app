@@ -3,10 +3,26 @@
   flex-direction: row;
   font-size: 1.35rem;
   color: white;
+  justify-content: space-between;
 }
 
 .navBar-container ul li a {
   color: white;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.navBar-container ul li a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 41, 123, 1) 0%,
+    rgba(255, 88, 100, 1) 35%,
+    rgba(255, 101, 91, 1) 100%
+  );
+  border-radius: 25%;
 }
 
 .navBar-leftside,
@@ -14,13 +30,9 @@
   margin-top: 8px;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.navBar-rightside {
-  width: 80%;
-}
 .navBar-button {
   margin-top: 30px;
   background: rgb(253, 41, 123);
@@ -37,4 +49,9 @@
   padding-right: 2rem;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.loginicon {
+  padding: 2rem 1rem;
+  color: rgb(253, 41, 123);
 }

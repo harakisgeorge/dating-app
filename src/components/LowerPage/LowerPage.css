@@ -1,7 +1,12 @@
 .lowerpage-container {
   background-color: white;
-  width: 90%;
   margin: 0 auto;
+}
+
+.footer_and_extra-info {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 80px;
 }
 .slider-container {
   font-size: 0.95rem;
@@ -10,9 +15,9 @@
   padding: 2rem 1rem;
 }
 .slide {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 250px;
-  width: 420px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 9px;
+  height: 320px;
+  width: 470px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -32,13 +37,16 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: Quicksand, sans-serif;
   width: 800px;
   font-size: 1.1rem;
   color: black;
 }
-
+div[class^="footer-part"],
+div[class*=" footer-part"] {
+  line-height: 2.3rem;
+}
 .footer-part3 ul {
   display: flex;
   flex-direction: row;
@@ -46,7 +54,7 @@
 
 .footer ul li a {
   margin: 5px;
-  color: black;
+  color: rgb(56, 56, 56);
 }
 
 .footer h5 {
@@ -57,5 +65,25 @@
 
 .extra-info {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10px;
+}
+
+.underline {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 2px;
+  background: rgb(227, 221, 241);
+  background: radial-gradient(
+    circle,
+    rgba(191, 181, 218, 1) 0%,
+    rgba(191, 181, 218, 1) 5%,
+    rgba(191, 181, 218, 1) 100%
+  );
+}
+
+.undernote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--clr-grey-4);
 }

@@ -22,7 +22,7 @@ const NavBar = ({handleLoginClick}) => {
 
          <ul className="navBar-rightside">
             <li> <a  href="#"><ImEarth /> ENGLISH</a></li>
-            <li> <a className="navBar-button" onClick={handleClick} className="loginicon" href="#">Log in</a></li>
+            <li> <a  onClick={handleClick} className="loginicon" href="#">Log in</a></li>
          </ul>
       </section>
    )
