@@ -1,5 +1,8 @@
 import React from 'react'
 import "./LowerPage.css"
+import apple_picture from "../../../src/assets/apple_store.png"
+import google_picture from "../../../src/assets/google_store.svg"
+
 import { FaFacebook,FaTwitter,FaInstagram,FaLinkedinIn } from 'react-icons/fa';
 const LowerPage = () => {
    return (
@@ -86,9 +89,9 @@ const LowerPage = () => {
                <div className='underline'></div>
                <div className="extra-info">
                   <div className="extra_info-part1">
-                     <h3>GET THE APP!</h3>
-                     <img src="../assets/apple_store.png" />
-                     <img src="" />
+                     <h3 className='extra_info-part1-item'>GET THE APP!</h3>
+                     <img className="store_picture extra_info-part1-item" src={apple_picture} />
+                     <img className="store_picture extra_info-part1-item" src={google_picture} />
                   </div>
                   <div className="extra_info-part2">
                      <p>Single people, listen up: If you’re looking for love, want to start dating, or just keep it casual, 

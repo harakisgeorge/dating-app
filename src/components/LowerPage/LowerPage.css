@@ -63,6 +63,23 @@ div[class*=" footer-part"] {
   font-size: 1.25rem;
 }
 
+.store_picture {
+  height: 65px;
+  width: auto;
+}
+
+.extra_info-part1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.extra_info-part1-item {
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
 .extra-info {
   margin: 0 auto;
   margin-top: 10px;
