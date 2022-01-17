@@ -11,15 +11,67 @@
 
 .download-uppercontainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
+  align-items: center;
 }
 
 .download-image {
   width: auto;
-  height: 600px;
+  height: 750px;
 }
 
 .download-container-lower {
   min-height: 720px;
+}
+
+.download-text {
+  color: white;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.download-tinder-logo a {
+  font-size: 4rem;
+  color: white;
+  letter-spacing: -4px;
+}
+
+.download-container-button a {
+  background-color: white;
+  border: 0;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: rgb(253, 41, 123);
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  border-radius: 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.download-uppercontainer ul,
+.download-uppercontainer img {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.download-uppercontainer img {
+  margin-top: 150px;
+  margin-bottom: -100px;
 }

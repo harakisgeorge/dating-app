@@ -7,10 +7,11 @@ import "./MainPage.css"
 const MainPage = () => {
 
    const [isShowLogin,setIsShowLogin] = useState(false);
-
+ 
    const handleLoginClick = () =>{
       setIsShowLogin((isShowLogin) => !isShowLogin)
    }
+
    return (
       <div>
          <div className="mainpage-container">
@@ -20,7 +21,7 @@ const MainPage = () => {
                <button className="mainpage-center_button">CREATE ACCOUNT</button>
             </div>
          </div>
-         <LowerPage />
+         <LowerPage Download={false} />
       </div>
    )
 }

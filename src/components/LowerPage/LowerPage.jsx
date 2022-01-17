@@ -1,51 +1,82 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import "./LowerPage.css"
 import apple_picture from "../../../src/assets/apple_store.png"
 import google_picture from "../../../src/assets/google_store.svg"
 
 import { FaFacebook,FaTwitter,FaInstagram,FaLinkedinIn } from 'react-icons/fa';
-const LowerPage = () => {
+const LowerPage = ({Download}) => {
+    const [isDownload,setisDownload] = useState(false);
+
+   useEffect(() => {
+      console.log(Download)
+      if(Download){
+         setisDownload(true)
+      }else{
+         setisDownload(false)
+      }
+    } );   
    return (
       <div className="lowerpage-container">
          <section className="story-slider">
-            <div className="slider-container">
-               
-               <div className="slide">
-                  <h4>Courtney & Miranda</h4>
-                  <div className="slide-underline"> </div>
-                  <p>Thanks to Tinder I have found the love of my life and we are to be married. 
-                  After going on a few dates and having a few fun nights I came across Miranda.
-                   After reading her profile I couldn’t resist swiping right after reading her final sentence... 
-                   ‘Looking for my super babe for life.’ 
-                  After talking for about a week we went out on our first date and I knew there was something special about her!</p>
-               </div>
-               
-               <div className="slide">
-               <h4>George & Ghoul</h4>
-                  <div className="slide-underline"> </div>
 
-                  <p>Thanks to Tinder I have found the love of my life and we are to be married. 
-                  After going on a few dates and having a few fun nights I came across Miranda.
-                   After reading her profile I couldn’t resist swiping right after reading her final sentence... 
-                   ‘Looking for my super babe for life.’ 
-                  After talking for about a week we went out on our first date and I knew there was something special about her!</p>
-               </div>
-
-               <div className="slide">
-               <h4>Cersei & Jaime</h4>
-                  <div className="slide-underline"> </div>
-
-                  <p>Thanks to Tinder I have found the love of my life and we are to be married. 
-                  After going on a few dates and having a few fun nights I came across Miranda.
-                   After reading her profile I couldn’t resist swiping right after reading her final sentence... 
-                   ‘Looking for my super babe for life.’ 
-                  After talking for about a week we went out on our first date and I knew there was something special about her!</p>
-               </div>
+         {isDownload ===false && (
+               <div className="slider-container">
                
-            </div>
+                <div className="slide">
+                   <h4>Courtney & Miranda</h4>
+                   <div className="slide-underline"> </div>
+                   <p>Thanks to Tinder I have found the love of my life and we are to be married. 
+                   After going on a few dates and having a few fun nights I came across Miranda.
+                    After reading her profile I couldn’t resist swiping right after reading her final sentence... 
+                    ‘Looking for my super babe for life.’ 
+                   After talking for about a week we went out on our first date and I knew there was something special about her!</p>
+                </div>
+                
+                <div className="slide">
+                <h4>George & Ghoul</h4>
+                   <div className="slide-underline"> </div>
+ 
+                   <p>Thanks to Tinder I have found the love of my life and we are to be married. 
+                   After going on a few dates and having a few fun nights I came across Miranda.
+                    After reading her profile I couldn’t resist swiping right after reading her final sentence... 
+                    ‘Looking for my super babe for life.’ 
+                   After talking for about a week we went out on our first date and I knew there was something special about her!</p>
+                </div>
+ 
+                <div className="slide">
+                <h4>Cersei & Jaime</h4>
+                   <div className="slide-underline"> </div>
+ 
+                   <p>Thanks to Tinder I have found the love of my life and we are to be married. 
+                   After going on a few dates and having a few fun nights I came across Miranda.
+                    After reading her profile I couldn’t resist swiping right after reading her final sentence... 
+                    ‘Looking for my super babe for life.’ 
+                   After talking for about a week we went out on our first date and I knew there was something special about her!</p>
+                </div>
+                
+             </div>
+              )}
+            
+
 
             <div className='footer_and_extra-info'>
-
+            {isDownload ===true && (
+                 <div className='download-text'>
+                 <h3>Supported Platforms and Devices</h3>
+                 <ul>
+                       <li> Tinder is currently available on iOS, Android, and HMS devices. 
+                       Along with our mobile apps, you can visit Tinder.com to use Tinder for Web.</li>
+                       <li>
+                       We also offer a lightweight version of Tinder you can take anywhere and everywhere 
+                       - download Tinder Lite from the Google Play store.
+                       </li>
+                       <li>
+                       Tinder currently supports iOS 12.0 and up, Android 7.0 and up, 
+                       and the latest versions of all major web browsers (Chrome, Firefox, Safari, Edge, etc.).  
+                       </li>
+                 </ul>
+              </div>
+            )}
             
                <div className="footer">
                   <div className="footer-part1">
