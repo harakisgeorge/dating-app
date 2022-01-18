@@ -1,8 +1,9 @@
 import React from 'react'
-
+import "./Register.css"
 const Register = () => {
    return (
-      <div>
+      <div className='container'>
+         <img src="../../assets/tinderlogin_example.jpg" />
          
       </div>
    )

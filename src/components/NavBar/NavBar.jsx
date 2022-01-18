@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {FaBurn} from "react-icons/fa"
 import {ImEarth} from "react-icons/im"
 import Modal from "../Modal/Modal.jsx"
+import {   Link } from "react-router-dom";
+
 import "./NavBar.css"
 const NavBar = ({handleLoginClick}) => {
    const [show,setShow] = useState(false);
@@ -17,12 +19,12 @@ const NavBar = ({handleLoginClick}) => {
    return (
       <section className="navBar-container">
          <ul className="navBar-leftside">
-            <li> <a><FaBurn /> Tindarz </a></li>
+            <li> <Link to="/"><FaBurn /> Tindarz </Link></li>
             <li> <a href="#">Products</a></li>
             <li> <a href="#">Learn</a></li>
-            <li> <a href="#">Safely</a></li>
-            <li> <a href="#">Support</a></li>
-            <li> <a href="#">Download</a></li>
+            <li> <a href="#">Safety</a></li>
+            <li> <Link to="/support">Support</Link></li>
+            <li> <Link to="/download">Download</Link></li>
 
          </ul>
          <Modal show={show} handleClose={hideModal}>

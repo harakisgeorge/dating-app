@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import NavBar from '../NavBar/NavBar'
 import LoginForm from '../LoginForm/LoginForm'
 import LowerPage from '../LowerPage/LowerPage'
+import {   Link } from "react-router-dom";
 
 import "./MainPage.css"
 const MainPage = () => {
@@ -18,7 +19,7 @@ const MainPage = () => {
             <NavBar handleLoginClick={handleLoginClick}/>
             <div className="mainpage-center">
                <h1 className="mainpage-center_title">Swipe Right <sup className="superscript">R</sup> </h1>
-               <button className="mainpage-center_button">CREATE ACCOUNT</button>
+               <button className="mainpage-center_button"><Link to="/register"><span >CREATE ACCOUNT</span></Link></button>
             </div>
          </div>
          <LowerPage Download={false} />

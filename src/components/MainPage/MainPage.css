@@ -48,6 +48,10 @@
   cursor: pointer;
 }
 
+.mainpage-center_button span {
+  color: white;
+}
+
 .mainpage-center_button:hover {
   background: linear-gradient(
     90deg,
