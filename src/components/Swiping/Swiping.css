@@ -16,7 +16,6 @@
 }
 .section-center {
   margin: 0 auto;
-  margin-top: 4rem;
   width: 80vw;
   height: 100vh;
   max-width: 800px;
@@ -53,7 +52,6 @@ article h4 {
 .text {
   max-width: 35em;
   margin: 0 auto;
-  margin-top: 2rem;
   line-height: 2;
   color: var(--clr-grey-5);
 }
@@ -80,6 +78,23 @@ article h4 {
   margin: 25px;
   transition: var(--transition);
 }
+
+.goBackButton {
+  background: var(--clr-grey-9);
+  color: var(--clr-grey-2);
+  width: 120px;
+  height: 1.65rem;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 20px;
+}
+
+.goBackButton:hover {
+  background: var(--clr-primary-5);
+}
 .left {
   color: red;
 }
@@ -98,7 +113,7 @@ article h4 {
 
 @media (min-width: 800px) {
   .text {
-    max-width: 45em;
+    max-width: 25em;
   }
   .left,
   .right,

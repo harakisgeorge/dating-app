@@ -2,13 +2,14 @@ import React from 'react'
 import {GoFlame } from 'react-icons/go';
 import {BiSearch} from "react-icons/bi"
 import "./Support.css"
+import {   Link } from "react-router-dom";
 
 const Support = () => {
    return (
       <div className='support-container'>
          <ul className="support-container_navbar">
             <li className="navbar-leftside"><a href=""> <GoFlame /> <span>Tinderzz </span></a></li>
-            <li className="navbar-rightsize" ><a href="">Back to Tinderzz</a></li>
+            <li className="navbar-rightsize" ><a ><Link to="/"><span >Back to Tinderzz</span></Link></a></li>
          </ul>
 
          <div className="main-section">

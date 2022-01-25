@@ -4,6 +4,8 @@ import { FaQuoteRight } from 'react-icons/fa'
 import {AiFillHeart,AiFillStar} from "react-icons/ai"
 import {GiCancel} from "react-icons/gi"
 import data from './data'
+import {   Link } from "react-router-dom";
+
 import "./Swiping.css"
 function App() {
   const [people, setPeople] = useState(data)
@@ -52,14 +54,14 @@ function App() {
   }, [index])
 
   return (
-    <>
+    <>      
+
     <section className='section'>
 
       <div className='section-center'>
-      <button>Back</button>
 
         {people.map((person, personIndex) => {
-          const { id, image, name, title, text } = person
+          const { id, image, name, title, text, age } = person
 
           let position = 'nextSlide'
           if (personIndex === index) {
@@ -73,10 +75,11 @@ function App() {
           }
 
           return (
+            <>
             <article className={position} key={id}>
               <div className='image_name'>
                 <img src={image} alt={name} className='person-img' />
-                <h4 className='name'>{name}</h4>
+                <h4 className='name'>{name}, {age}</h4>
               </div>
               <p className='title'>{title}</p>
               <p className='text'>{text}</p>
@@ -91,7 +94,10 @@ function App() {
                     <AiFillHeart />
                 </button>
             </div>
+            <button className='goBackButton'><Link to="/"><span >Back</span></Link></button>
+
             </article>
+            </>
           )
         })}
        

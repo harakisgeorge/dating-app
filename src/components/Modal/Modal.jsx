@@ -7,23 +7,21 @@ const Modal = ({ handleClose, show, children }) => {
      <div className={showHideClassName}>
    
        <section className="modal-main">
-       <div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true"/>
-         {/*
-			 */}
-
-			<div class="login">
-				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required=""/>
-					<input type="password" name="pswd" placeholder="Password" required=""/>
-					<button>Login</button>
-				</form>
-			</div>
-	</div>
-         <button type="button" onClick={handleClose}>
-           Close
-         </button>
+       <div class="main">  	      
+        <h2 className='title'>LOGIN</h2>
+          <div class="login">
+            <form className="form">
+              <label for="chk" aria-hidden="true">Login</label>
+              <input className="input-email" type="email" name="email" placeholder="Email" required=""/>
+              <input className="input-password" type="password" name="pswd" placeholder="Password" required=""/>
+              <div className='buttons'>
+                <button>Login</button>
+                <button type="button" onClick={handleClose}>Close</button>
+              </div>
+            </form>
+          </div>
+	      </div>
+         
        </section>
      </div>
    );

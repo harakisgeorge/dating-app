@@ -22,6 +22,7 @@ const MainPage = () => {
                <button className="mainpage-center_button"><Link to="/register"><span >CREATE ACCOUNT</span></Link></button>
             </div>
          </div>
+         
          <LowerPage Download={false} />
       </div>
    )
