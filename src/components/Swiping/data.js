@@ -1,8 +1,9 @@
 const reviews = [
    {
      id: 1,
-     name: 'susan smith',
+     name: 'Susan',
      job: 'web developer',
+     age: "23",
      image:
        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
      text:
@@ -10,8 +11,10 @@ const reviews = [
    },
    {
      id: 2,
-     name: 'anna johnson',
+     name: 'Anna',
      job: 'web designer',
+     age: "23",
+
      image:
        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
      text:
@@ -19,8 +22,10 @@ const reviews = [
    },
    {
      id: 3,
-     name: 'peter jones',
+     name: 'Peter',
      job: 'intern',
+     age: "23",
+
      image:
        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
      text:
@@ -28,8 +33,10 @@ const reviews = [
    },
    {
      id: 4,
-     name: 'bill anderson',
-     job: 'the boss',
+     name: 'Bill',
+     job: 'engineer',
+     age: "23",
+
      image:
        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
      text:
