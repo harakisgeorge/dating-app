@@ -13,23 +13,29 @@
   margin-bottom: 50px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   display: inline-flex;
   background: #fff;
 }
 .wrapper .option {
   background: #fff;
-  height: 100%;
-  width: 100%;
+  width: 420px;
+  height: 43px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 10px;
-  border-radius: 5px;
   cursor: pointer;
   padding: 0 10px;
   border: 2px solid lightgrey;
   transition: all 0.3s ease;
+  font-size: 19px;
 }
 .wrapper .option .dot {
   height: 20px;
